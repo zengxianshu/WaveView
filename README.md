@@ -1,16 +1,12 @@
 # WaveView
 
-[![CI Status](http://img.shields.io/travis/Howtin/PhoenixSwiftAPIClient.svg?style=flat)]//(https://travis-ci.org/Howtin/PhoenixSwiftAPIClient)
-[![Version](https://img.shields.io/cocoapods/v/PhoenixSwiftAPIClient.svg?style=flat)]//(http://cocoapods.org/pods/PhoenixSwiftAPIClient)
-[![License](https://img.shields.io/cocoapods/l/PhoenixSwiftAPIClient.svg?style=flat)]//(http://cocoapods.org/pods/PhoenixSwiftAPIClient)
-[![Platform](https://img.shields.io/cocoapods/p/PhoenixSwiftAPIClient.svg?style=flat)]//(http://cocoapods.org/pods/PhoenixSwiftAPIClient)
+[![CI Status](http://img.shields.io/travis/Howtin/PhoenixSwiftAPIClient.svg?style=flat)]
+[![Version](https://img.shields.io/cocoapods/v/PhoenixSwiftAPIClient.svg?style=flat)]
+[![License](https://img.shields.io/cocoapods/l/PhoenixSwiftAPIClient.svg?style=flat)]
+[![Platform](https://img.shields.io/cocoapods/p/PhoenixSwiftAPIClient.svg?style=flat)]
 
 # effect
 ![](testWave.gif)
-
-## Usage
-
-'pod 'ZMWaveView''
 
 ## Requirements
 
