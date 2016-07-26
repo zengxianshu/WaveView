@@ -1,9 +1,9 @@
 # WaveView
 
-[![CI Status](http://img.shields.io/travis/Howtin/PhoenixSwiftAPIClient.svg?style=flat)]
-[![Version](https://img.shields.io/cocoapods/v/PhoenixSwiftAPIClient.svg?style=flat)]
-[![License](https://img.shields.io/cocoapods/l/PhoenixSwiftAPIClient.svg?style=flat)]
-[![Platform](https://img.shields.io/cocoapods/p/PhoenixSwiftAPIClient.svg?style=flat)]
+[![CI Status](http://img.shields.io/travis/Howtin/PhoenixSwiftAPIClient.svg?style=flat)](https://github.com/zengxianshu/WaveView)
+[![Version](https://img.shields.io/cocoapods/v/PhoenixSwiftAPIClient.svg?style=flat)](https://github.com/zengxianshu/WaveView)
+[![License](https://img.shields.io/cocoapods/l/PhoenixSwiftAPIClient.svg?style=flat)](https://github.com/zengxianshu/WaveView)
+[![Platform](https://img.shields.io/cocoapods/p/PhoenixSwiftAPIClient.svg?style=flat)](https://github.com/zengxianshu/WaveView)
 
 # effect
 ![](testWave.gif)
@@ -13,7 +13,7 @@
 ## Installation
 
 ```ruby
-pod "ZMWaveView"
+pod 'ZMWaveView'
 ```
 
 ## Author
@@ -22,4 +22,4 @@ Zeng Mo, zengxianshu0@163.com
 
 ## License
 
-PhoenixSwiftAPIClient is available under the MIT license. See the LICENSE file for more info.
+ZMWaveView is available under the MIT license. See the LICENSE file for more info.
