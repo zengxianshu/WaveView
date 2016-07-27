@@ -1,9 +1,10 @@
 # WaveView
 
-[![CI Status](http://img.shields.io/travis/Howtin/PhoenixSwiftAPIClient.svg?style=flat)](https://github.com/zengxianshu/WaveView)
-[![Version](https://img.shields.io/cocoapods/v/PhoenixSwiftAPIClient.svg?style=flat)](https://github.com/zengxianshu/WaveView)
-[![License](https://img.shields.io/cocoapods/l/PhoenixSwiftAPIClient.svg?style=flat)](https://github.com/zengxianshu/WaveView)
-[![Platform](https://img.shields.io/cocoapods/p/PhoenixSwiftAPIClient.svg?style=flat)](https://github.com/zengxianshu/WaveView)
+[![Build Status](https://api.travis-ci.org/ivanbruel/WaveView.svg?branch=master)](https://github.com/zengxianshu/WaveView)
+[![Platform iOS](https://img.shields.io/badge/Platforms-iOS-lightgray.svg?style=flat)](https://developer.apple.com/swift/)
+[![Version](https://img.shields.io/cocoapods/v/ZMWaveView.svg?style=flat)](https://github.com/zengxianshu/WaveView)
+[![License](https://img.shields.io/cocoapods/l/ZMWaveView.svg?style=flat)](https://github.com/zengxianshu/WaveView)
+[![Platform](https://img.shields.io/cocoapods/p/ZMWaveView.svg?style=flat)](https://github.com/zengxianshu/WaveView)
 
 # effect
 ![](testWave.gif)
