@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Wave" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,12 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dBB-4w-NVq" customClass="WaveView" customModule="Wave" customModuleProvider="target">
-                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h2i-Ab-gsA" customClass="WaveView" customModule="Demo" customModuleProvider="target">
+                                <rect key="frame" x="158" y="221" width="284" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="8iI-JO-odL"/>
-                                    <constraint firstAttribute="height" constant="128" id="NcJ-Rw-2fI"/>
+                                    <constraint firstAttribute="height" constant="128" id="Nsw-yK-bMM"/>
+                                    <constraint firstAttribute="width" constant="240" id="fvl-77-0oD"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="binWidth">
@@ -31,24 +31,25 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="numOfBins">
                                         <integer key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="binColor">
-                                        <color key="value" red="0.86274509799999999" green="0.08235294118" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="anchorPointY">
                                         <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="binColor">
+                                        <color key="value" red="0.86274509799999999" green="0.08235294118" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="dBB-4w-NVq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EQg-0s-sGv"/>
-                            <constraint firstItem="dBB-4w-NVq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dNK-b9-Ovs"/>
+                            <constraint firstItem="h2i-Ab-gsA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CrV-fE-z1m"/>
+                            <constraint firstItem="h2i-Ab-gsA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="S00-hI-DBc"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="340" y="429"/>
         </scene>
     </scenes>
 </document>

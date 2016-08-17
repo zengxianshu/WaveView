@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Wave
+//  Demo
 //
-//  Created by Ink on 16/7/26.
+//  Created by Ink on 16/8/12.
 //  Copyright © 2016年 Ink. All rights reserved.
 //
 
