@@ -22,7 +22,7 @@ pod 'ZMWaveView'
 
 ## Author
 
-Zeng Mo, zengxsios@gmail.com
+曾墨, zengxsios@gmail.com
 
 ## License
 
