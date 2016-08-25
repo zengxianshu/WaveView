@@ -22,7 +22,11 @@ class WaveView: UIView {
   
   @IBInspectable var numOfBins: Int = 3
   
+  /// center for wave
   @IBInspectable var anchorPointY: CGFloat = 1.0
+  
+  /// this time effect wave speed
+  @IBInspectable var durationTime: CGFloat = 4.0
   
   @IBInspectable var binColor: UIColor = .clearColor() {
     didSet {
@@ -85,7 +89,7 @@ class WaveView: UIView {
     let heightAnim = CAKeyframeAnimation.init(keyPath: "bounds.size.height")
     heightAnim.values = self.getAnimValues()
     heightAnim.repeatCount  = MAXFLOAT
-    heightAnim.duration =  4.0 + NSTimeInterval(arc4random_uniform(3)) * 0.1
+    heightAnim.duration =  NSTimeInterval(durationTime) + NSTimeInterval(arc4random_uniform(3)) * 0.1
     heightAnim.removedOnCompletion = false 
     return heightAnim
   }

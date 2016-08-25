@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h2i-Ab-gsA" customClass="WaveView" customModule="Demo" customModuleProvider="target">
-                                <rect key="frame" x="158" y="221" width="284" height="128"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h2i-Ab-gsA" customClass="WaveView" customModule="Demo" customModuleProvider="target">
+                                <rect key="frame" x="180" y="236" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="Nsw-yK-bMM"/>
@@ -39,11 +39,65 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vCt-KQ-x74" customClass="WaveView" customModule="Demo" customModuleProvider="target">
+                                <rect key="frame" x="180" y="98" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Ae2-ve-8hs"/>
+                                    <constraint firstAttribute="height" constant="128" id="TA2-fL-hgf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="binWidth">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numOfBins">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="anchorPointY">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="binColor">
+                                        <color key="value" red="0.14764877845393998" green="0.86274509799999999" blue="0.2269722785714641" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="durationTime">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZwD-YF-H3d" customClass="WaveView" customModule="Demo" customModuleProvider="target">
+                                <rect key="frame" x="180" y="374" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="70a-Nh-eNy"/>
+                                    <constraint firstAttribute="height" constant="128" id="hDZ-yA-LEZ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="binWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numOfBins">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="anchorPointY">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="binColor">
+                                        <color key="value" red="0.18496762419863322" green="0.22039401725726065" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="durationTime">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ZwD-YF-H3d" firstAttribute="top" secondItem="h2i-Ab-gsA" secondAttribute="bottom" constant="10" id="Cmg-6q-Q3q"/>
                             <constraint firstItem="h2i-Ab-gsA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CrV-fE-z1m"/>
                             <constraint firstItem="h2i-Ab-gsA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="S00-hI-DBc"/>
+                            <constraint firstItem="h2i-Ab-gsA" firstAttribute="top" secondItem="vCt-KQ-x74" secondAttribute="bottom" constant="10" id="T5V-g3-kOL"/>
+                            <constraint firstItem="ZwD-YF-H3d" firstAttribute="centerX" secondItem="vCt-KQ-x74" secondAttribute="centerX" id="ZVt-wT-kPR"/>
+                            <constraint firstItem="h2i-Ab-gsA" firstAttribute="centerX" secondItem="vCt-KQ-x74" secondAttribute="centerX" id="cVt-1J-tci"/>
                         </constraints>
                     </view>
                 </viewController>
