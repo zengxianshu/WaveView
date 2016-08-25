@@ -14,7 +14,7 @@ enum kDistributeType {
   case AlongTheEdge, UnAlongTheEdge
 }
 
-class WaveView: UIView {
+public class WaveView: UIView {
   
   var distributeType: kDistributeType = .AlongTheEdge
   

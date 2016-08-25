@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "ZMWaveView"
-s.version      = "0.0.3"
+s.version      = "0.0.4"
 s.summary      = "柱状波形动画"
 
 s.homepage     = "https://github.com/zengxianshu/WaveView"
