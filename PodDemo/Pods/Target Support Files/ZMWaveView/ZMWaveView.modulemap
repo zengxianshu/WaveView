@@ -1,0 +1,6 @@
+framework module ZMWaveView {
+  umbrella header "ZMWaveView-umbrella.h"
+
+  export *
+  module * { export * }
+}

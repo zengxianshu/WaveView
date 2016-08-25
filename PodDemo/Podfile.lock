@@ -1,0 +1,15 @@
+PODS:
+  - Kingfisher (2.4.3)
+  - ZMWaveView (0.0.2)
+
+DEPENDENCIES:
+  - Kingfisher
+  - ZMWaveView
+
+SPEC CHECKSUMS:
+  Kingfisher: 322a9c1c5b03212c1e741d6bece72d387b01a77a
+  ZMWaveView: b1492cdde26ad2d18feea54d1565e6d9cf112846
+
+PODFILE CHECKSUM: afe30b381bb30bf6f9ebfe8f2e7e1af4365ca916
+
+COCOAPODS: 1.0.1
