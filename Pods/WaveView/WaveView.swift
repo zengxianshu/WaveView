@@ -115,7 +115,7 @@ public class WaveView: UIView {
     return self.bounds.height * CGFloat( arc4random_uniform(9) + 2 ) / 10.0
   }
   
-  override func layoutSubviews() {
+  override public func layoutSubviews() {
     super.layoutSubviews()
     self.setup()
   }
