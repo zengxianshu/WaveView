@@ -10,25 +10,25 @@
 
 import UIKit
 
-enum kDistributeType {
+public enum kDistributeType {
   case AlongTheEdge, UnAlongTheEdge
 }
 
 public class WaveView: UIView {
   
-  var distributeType: kDistributeType = .AlongTheEdge
+  public var distributeType: kDistributeType = .AlongTheEdge
   
-  @IBInspectable var binWidth: CGFloat = 2.0
+  @IBInspectable public var binWidth: CGFloat = 2.0
   
-  @IBInspectable var numOfBins: Int = 3
+  @IBInspectable public var numOfBins: Int = 3
   
   /// center for wave
-  @IBInspectable var anchorPointY: CGFloat = 1.0
+  @IBInspectable public var anchorPointY: CGFloat = 1.0
   
   /// this time effect wave speed
-  @IBInspectable var durationTime: CGFloat = 4.0
+  @IBInspectable public var durationTime: CGFloat = 4.0
   
-  @IBInspectable var binColor: UIColor = .clearColor() {
+  @IBInspectable public var binColor: UIColor = .clearColor() {
     didSet {
       _ = self.layer.sublayers?.map {
         $0.backgroundColor = binColor.CGColor
