@@ -2,7 +2,6 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'PodDemo' do
-  pod 'Kingfisher'
   pod 'ZMWaveView'
 end
 
