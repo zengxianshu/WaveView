@@ -12,7 +12,7 @@ import UIKit
 
 open class WaveView: UIView {
   
-  // column begin is from side
+  /// column begin is from side
   @IBInspectable open var isAlongTheEdge: Bool = false
   
   @IBInspectable open var binWidth: CGFloat = 2.0
