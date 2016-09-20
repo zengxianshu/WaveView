@@ -10,33 +10,30 @@
 
 import UIKit
 
-public enum kDistributeType {
-  case AlongTheEdge, UnAlongTheEdge
-}
-
-public class WaveView: UIView {
+open class WaveView: UIView {
   
-  public var distributeType: kDistributeType = .AlongTheEdge
+  // column begin is from side
+  @IBInspectable open var isAlongTheEdge: Bool = false
   
-  @IBInspectable public var binWidth: CGFloat = 2.0
+  @IBInspectable open var binWidth: CGFloat = 2.0
   
-  @IBInspectable public var numOfBins: Int = 3
+  @IBInspectable open var numOfBins: Int = 3
   
   /// center for wave
-  @IBInspectable public var anchorPointY: CGFloat = 1.0
+  @IBInspectable open var anchorPointY: CGFloat = 1.0
   
   /// this time effect wave speed
-  @IBInspectable public var durationTime: CGFloat = 4.0
+  @IBInspectable open var durationTime: CGFloat = 4.0
   
-  @IBInspectable public var binColor: UIColor = .clearColor() {
+  @IBInspectable open var binColor: UIColor = .clear {
     didSet {
       _ = self.layer.sublayers?.map {
-        $0.backgroundColor = binColor.CGColor
+        $0.backgroundColor = binColor.cgColor
       }
     }
   }
   
-  private func setup() {
+  fileprivate func setup() {
     
     guard self.binWidth > 0 else {
       self.binWidth = self.bounds.width/CGFloat(numOfBins)
@@ -52,7 +49,7 @@ public class WaveView: UIView {
     let heightMax = self.bounds.height
     let widthMax = self.bounds.width
     
-    let paddingNum = self.distributeType == .AlongTheEdge ? numOfBins - 1 : numOfBins + 1
+    let paddingNum = self.isAlongTheEdge ? numOfBins - 1 : numOfBins + 1
     
     var paddingWidth: CGFloat = 0
     
@@ -63,7 +60,7 @@ public class WaveView: UIView {
       newBinWidth = widthMax / CGFloat(numOfBins)
     }
     
-    let firstBinOriginX = self.distributeType == .AlongTheEdge ? 0 : paddingWidth
+    let firstBinOriginX = self.isAlongTheEdge ? 0 : paddingWidth
     
     for index in 1...numOfBins {
       
@@ -75,26 +72,26 @@ public class WaveView: UIView {
     }
   }
   
-  private func animLayer(frame: CGRect) -> CALayer{
+  fileprivate func animLayer(_ frame: CGRect) -> CALayer{
     let layer = CALayer.init()
     layer.frame = frame
     layer.anchorPoint = CGPoint.init(x: 0.5, y: anchorPointY)
     layer.bounds.size.height = self.getWaveHeight()
-    layer.backgroundColor = binColor.CGColor
-    layer.addAnimation(self.getAnim(), forKey: "waveAnim")
+    layer.backgroundColor = binColor.cgColor
+    layer.add(self.getAnim(), forKey: "waveAnim")
     return layer
   }
   
-  private func getAnim() -> CAKeyframeAnimation{
+  fileprivate func getAnim() -> CAKeyframeAnimation{
     let heightAnim = CAKeyframeAnimation.init(keyPath: "bounds.size.height")
     heightAnim.values = self.getAnimValues()
     heightAnim.repeatCount  = MAXFLOAT
-    heightAnim.duration =  NSTimeInterval(durationTime) + NSTimeInterval(arc4random_uniform(3)) * 0.1
-    heightAnim.removedOnCompletion = false 
+    heightAnim.duration =  TimeInterval(durationTime) + TimeInterval(arc4random_uniform(3)) * 0.1
+    heightAnim.isRemovedOnCompletion = false 
     return heightAnim
   }
   
-  private func getAnimValues() -> [CGFloat] {
+  fileprivate func getAnimValues() -> [CGFloat] {
     
     var heightValues = [CGFloat]()
     heightValues.append(self.getWaveHeight())
@@ -111,11 +108,11 @@ public class WaveView: UIView {
     return heightValues
   }
   
-  private func getWaveHeight() -> CGFloat {
+  fileprivate func getWaveHeight() -> CGFloat {
     return self.bounds.height * CGFloat( arc4random_uniform(9) + 2 ) / 10.0
   }
   
-  override public func layoutSubviews() {
+  override open func layoutSubviews() {
     super.layoutSubviews()
     self.setup()
   }
