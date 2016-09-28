@@ -16,6 +16,7 @@
 ZMWaveView is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 ```ruby
+use_frameworks!
 pod 'ZMWaveView' :git => 'https://github.com/zengxianshu/WaveView.git'
 ```
 ![](Example.png)
