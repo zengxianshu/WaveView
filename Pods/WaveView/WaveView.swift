@@ -32,8 +32,8 @@ open class WaveView: UIView {
       }
     }
   }
-  
-  fileprivate func setup() {
+
+  private func setup() {
     
     guard self.binWidth > 0 else {
       self.binWidth = self.bounds.width/CGFloat(numOfBins)
@@ -72,7 +72,7 @@ open class WaveView: UIView {
     }
   }
   
-  fileprivate func animLayer(_ frame: CGRect) -> CALayer{
+  private func animLayer(_ frame: CGRect) -> CALayer{
     let layer = CALayer.init()
     layer.frame = frame
     layer.anchorPoint = CGPoint.init(x: 0.5, y: anchorPointY)
@@ -82,7 +82,7 @@ open class WaveView: UIView {
     return layer
   }
   
-  fileprivate func getAnim() -> CAKeyframeAnimation{
+  private func getAnim() -> CAKeyframeAnimation{
     let heightAnim = CAKeyframeAnimation.init(keyPath: "bounds.size.height")
     heightAnim.values = self.getAnimValues()
     heightAnim.repeatCount  = MAXFLOAT
@@ -91,7 +91,7 @@ open class WaveView: UIView {
     return heightAnim
   }
   
-  fileprivate func getAnimValues() -> [CGFloat] {
+  private func getAnimValues() -> [CGFloat] {
     
     var heightValues = [CGFloat]()
     heightValues.append(self.getWaveHeight())
@@ -108,7 +108,7 @@ open class WaveView: UIView {
     return heightValues
   }
   
-  fileprivate func getWaveHeight() -> CGFloat {
+  private func getWaveHeight() -> CGFloat {
     return self.bounds.height * CGFloat( arc4random_uniform(9) + 2 ) / 10.0
   }
   
