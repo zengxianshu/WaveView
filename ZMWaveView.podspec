@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "ZMWaveView"
-s.version      = "0.1.1"
+s.version      = "0.1.2"
 s.summary      = "柱状波形动画"
 
 s.homepage     = "https://github.com/zengxianshu/WaveView"
@@ -17,7 +17,5 @@ s.source       = { :git => "https://github.com/zengxianshu/WaveView.git", :tag =
 s.source_files = "Pods/WaveView/*.swift"
 
 s.requires_arc = true
-
-s.xcconfig     = { 'SWIFT_VERSION' => '3.0' }
 
 end
